@@ -33,11 +33,11 @@ body {
 /*-------Header-----*/
 /*-------Header-----*/
 header {
-  min-height: 5.5rem;
+  min-height: 5.4rem;
 }
 
 header .nav-container {
-  margin: 1.5rem;
+  margin: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,8 +66,8 @@ header .nav-container nav {
   min-height: 100vh;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-transition: right 0.5s ease;
-  transition: right 0.5s ease;
+  -webkit-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out;
   z-index: 1;
 }
 
@@ -100,6 +100,7 @@ header .nav-container nav ul {
 }
 
 header .nav-container nav ul li {
+  position: relative;
   color: #fff;
 }
 
@@ -110,6 +111,34 @@ header .nav-container nav ul li a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2.7px;
+}
+
+header .nav-container nav ul li a::before {
+  content: "";
+  width: 4px;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 2.2rem;
+  -webkit-margin-after: -36px;
+          margin-block-end: -36px;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+header .nav-container nav ul li a:hover::before {
+  height: 31px;
+}
+
+header .nav-container nav ul li a.active::before {
+  content: "";
+  width: 4px;
+  height: 31px;
+  background-color: #fff;
+  position: absolute;
+  right: 2.2rem;
+  -webkit-margin-end: -36px;
+          margin-inline-end: -36px;
 }
 
 header .nav-container nav .line {

@@ -31,9 +31,9 @@ body {
 /*-------Header-----*/
 /*-------Header-----*/
 header {
-  min-height: 5.5rem;
+  min-height: 5.4rem;
   .nav-container {
-    margin: 1.5rem;
+    margin: 1.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@ header {
         top: 0;
         right: -100vw;
       }
-      transition: right 0.5s ease;
+      transition: right 0.5s ease-in-out;
       z-index: 1;
 
       img {
@@ -68,6 +68,7 @@ header {
         margin-inline-start: 27px;
         list-style: none;
         li {
+          position: relative;
           color: #fff;
           a {
             color: rgb(255, 255, 255);
@@ -76,6 +77,29 @@ header {
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 2.7px;
+
+            &::before {
+              content: "";
+              width: 4px;
+              height: 0;
+              background-color: rgba(255, 255, 255, 0.5);
+              position: absolute;
+              right: 2.2rem;
+              margin-block-end: -36px;
+              transition: width 0.2s ease;
+            }
+            &:hover::before {
+              height: 31px;
+            }
+            &.active::before {
+              content: "";
+              width: 4px;
+              height: 31px;
+              background-color: #fff;
+              position: absolute;
+              right: 2.2rem;
+              margin-inline-end: -36px;
+            }
           }
         }
       }
