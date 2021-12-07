@@ -15,22 +15,25 @@
   <header>
     <div class="nav-container">
       <div class="logo">
-        <img src="./starter-code/assets/shared/logo.svg" alt="logo" />
+        <a href="#">
+          <img src="./starter-code/assets/shared/logo.svg" alt="logo" />
+        </a>
       </div>
       <div class="logo">
-        <img src="./starter-code/assets/shared/icon-hamburger.svg" alt="menu-btn" />
+        <img src="./starter-code/assets/shared/icon-hamburger.svg" alt="menu-btn" id="menu" />
       </div>
 
-      <nav>
+      <nav id="nav">
         <div class="logo">
-          <img src="./starter-code/assets/shared/icon-close.svg" alt="menu-btn" />
+          <img src="./starter-code/assets/shared/icon-close.svg" alt="menu-btn" id="close" />
         </div>
         <ul>
-          <li><a href="#"></a>00 Home</li>
-          <li><a href="#"></a>01 Destination</li>
-          <li><a href="#"></a>02 Crew</li>
-          <li><a href="#"></a>03 Technolog</li>
+          <li><a href="#" class="active"><span> 00</span> Home</a></li>
+          <li><a href="#"><span> 01</span> Destination</a></li>
+          <li><a href="#"><span> 02</span> Crew</a></li>
+          <li><a href="#"><span> 03</span> Technology</a></li>
         </ul>
+        <div class="line"></div>
       </nav>
     </div>
   </header>
@@ -45,8 +48,9 @@
         experience!
       </p>
     </div>
-    <div class="explore">Explore</div>
+    <div class="explore"><a href="">Explore</a></div>
   </section>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
