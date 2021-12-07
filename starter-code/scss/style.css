@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-barlowCondensed: "Barlow Condensed", sans-serif;
+  --ff-bellefair: "Bellefair", serif;
+}
+
+.logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  overflow-x: hidden;
+}
+
+header {
+  min-height: 5.5rem;
+}
+
+header .nav-container {
+  margin: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-container nav {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+          backdrop-filter: blur(81.5485px);
+  width: 254px;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+header .nav-container nav img {
+  float: right;
+  max-width: 100%;
+  margin: 34px 27px 65px 0;
+}
+
+header .nav-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  -webkit-margin-start: 27px;
+          margin-inline-start: 27px;
+  list-style: none;
+}
+
+header .nav-container nav ul li {
+  color: #fff;
+}
+
+header .nav-container nav ul li a {
+  text-decoration: none;
+  font-family: var(--ff-barlowCondensed);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2.7px;
+}
+
+section {
+  color: #fff;
+  text-align: center;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin: 3.6rem 1.5rem;
+}
+
+section .container h1 {
+  font-family: var(--ff-barlowCondensed);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+section .container h1 span {
+  color: #ffffff;
+  font-family: var(--ff-bellefair);
+  font-size: 80px;
+  line-height: 100px;
+}
+
+section .container p {
+  color: #d0d6f9;
+  font-family: var(--ff-barlow);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+section .explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: #0b0d17;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: var(--ff-bellefair);
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 1.25px;
+  border-radius: 50%;
+  -webkit-margin-before: 1.5rem;
+          margin-block-start: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
