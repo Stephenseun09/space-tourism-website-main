@@ -77,6 +77,16 @@ header {
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 2.7px;
+            &::before {
+              content: "";
+              width: 4px;
+              height: 0;
+              background-color: rgba(255, 255, 255, 0.5);
+              position: absolute;
+              right: 0;
+              margin-block-end: -36px;
+              transition: width 0.2s ease;
+            }
             &.active::before {
               content: "";
               width: 4px;
@@ -151,6 +161,19 @@ section {
     a {
       text-decoration: none;
       color: #0b0d17;
+      &::before {
+        content: "";
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover::before {
+        transform: scale(1.3);
+      }
     }
   }
 }
