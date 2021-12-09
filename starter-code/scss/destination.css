@@ -101,23 +101,6 @@ header .nav-container nav ul li a {
   letter-spacing: 2.7px;
 }
 
-header .nav-container nav ul li a::before {
-  content: "";
-  width: 4px;
-  height: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  right: 0;
-  -webkit-margin-after: -36px;
-          margin-block-end: -36px;
-  -webkit-transition: width 0.2s ease;
-  transition: width 0.2s ease;
-}
-
-header .nav-container nav ul li a:hover::before {
-  height: 3px;
-}
-
 header .nav-container nav ul li a.active::before {
   content: "";
   width: 4px;
@@ -229,23 +212,6 @@ section .container-right ul li a {
 
 section .container-right ul li a.active {
   color: #fff;
-}
-
-section .container-right ul li a::before {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  bottom: 0;
-  -webkit-margin-after: -8px;
-          margin-block-end: -8px;
-  -webkit-transition: width 0.2s ease;
-  transition: width 0.2s ease;
-}
-
-section .container-right ul li a:hover::before {
-  width: 100%;
 }
 
 section .container-right ul li a.active::before {
