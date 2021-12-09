@@ -115,7 +115,7 @@ header .nav-container nav ul li a::before {
 }
 
 header .nav-container nav ul li a:hover::before {
-  height: 31px;
+  height: 3px;
 }
 
 header .nav-container nav ul li a.active::before {
