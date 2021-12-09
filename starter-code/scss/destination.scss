@@ -354,6 +354,7 @@ section {
                 transition: width 0.2s ease;
               }
               &:hover::before {
+                height: 3px;
                 width: 100%;
               }
               &.active::before {
@@ -549,6 +550,7 @@ section {
               }
               &:hover::before {
                 width: 100%;
+                height: 3px;
               }
               &.active::before {
                 content: "";
