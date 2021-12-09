@@ -227,6 +227,10 @@ section .container-right ul li a {
   background: none;
 }
 
+section .container-right ul li a.active {
+  color: #fff;
+}
+
 section .container-right ul li a::before {
   content: "";
   width: 0;
@@ -357,5 +361,465 @@ section .container-right .distance-time .travel-time h4 {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/*-------Media queries-----*/
+/*-------Media queries-----*/
+/*-------Media queries-----*/
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /*-------Header-----*/
+  /*-------Header-----*/
+  header {
+    min-height: 6rem;
+  }
+  header .nav-container {
+    margin: 0;
+    -webkit-margin-start: 2.5rem;
+            margin-inline-start: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 231px;
+    /*-------Navbar-----*/
+    /*-------Navbar-----*/
+  }
+  header .nav-container .logo:nth-child(2) {
+    display: none;
+  }
+  header .nav-container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81.5485px);
+            backdrop-filter: blur(81.5485px);
+    width: 450px;
+    min-height: initial;
+    padding: 2.5rem 0;
+    position: static;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  header .nav-container nav img {
+    display: none;
+  }
+  header .nav-container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 37px;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    list-style: none;
+  }
+  header .nav-container nav ul li {
+    /*-------Links-----*/
+    /*-------Links-----*/
+  }
+  header .nav-container nav ul li a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-family: var(--ff-barlowCondensed);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.4px;
+    position: relative;
+  }
+  header .nav-container nav ul li a::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    -webkit-margin-after: -36px;
+            margin-block-end: -36px;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+  }
+  header .nav-container nav ul li a:hover::before {
+    width: 100%;
+  }
+  header .nav-container nav ul li a.active::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    -webkit-margin-after: -36px;
+            margin-block-end: -36px;
+  }
+  header .nav-container nav ul li a span {
+    display: none;
+  }
+  header .nav-container nav .line {
+    display: none;
+  }
+  /*-------Section-----*/
+  /*-------Section-----*/
+  section {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    text-align: left;
+    margin: 2.5rem 2.4rem;
+    gap: 3.3rem;
+    /*----left----*/
+    /*---------right---------*/
+  }
+  section .container-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.75rem;
+  }
+  section .container-left h1 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 3.4px;
+  }
+  section .container-left .image-container {
+    margin: auto;
+  }
+  section .container-left .image-container img {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  section .container-right {
+    min-width: 35.8rem;
+    margin: auto;
+    gap: 2rem;
+    /*---------list---------*/
+    /*---------article---------*/
+    /*---------line---------*/
+    /*---------Distance & Time---------*/
+  }
+  section .container-right ul {
+    gap: 2.2rem;
+  }
+  section .container-right ul li a {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  section .container-right ul li a::before {
+    -webkit-margin-after: -12px;
+            margin-block-end: -12px;
+  }
+  section .container-right ul li a.active::before {
+    -webkit-margin-after: -12px;
+            margin-block-end: -12px;
+  }
+  section .container-right article h2 {
+    font-size: 80px;
+    line-height: 1.15;
+    text-align: center;
+  }
+  section .container-right article p {
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+  }
+  section .container-right .line {
+    width: 35.8rem;
+  }
+  section .container-right .distance-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2.7rem;
+  }
+  section .container-right .distance-time .avg-distance {
+    gap: 0.75rem;
+  }
+  section .container-right .distance-time .travel-time {
+    gap: 0.75rem;
+  }
+}
+
+/*----At 1440px----*/
+/*----At 1440px----*/
+/*----At 1440px----*/
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  /*-------Header-----*/
+  /*-------Header-----*/
+  header .nav-container {
+    margin: 0;
+    -webkit-margin-start: 3.5rem;
+            margin-inline-start: 3.5rem;
+    -webkit-margin-before: 2.5rem;
+            margin-block-start: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 231px;
+    /*-------Navbar-----*/
+    /*-------Navbar-----*/
+  }
+  header .nav-container .logo:nth-child(2) {
+    display: none;
+  }
+  header .nav-container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81.5485px);
+            backdrop-filter: blur(81.5485px);
+    width: 830px;
+    margin: 0;
+    padding: 0;
+    padding: 2.5rem 0;
+    position: static;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  header .nav-container nav img {
+    display: none;
+  }
+  header .nav-container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 37px;
+    margin: 0;
+    padding: 0 9.4rem;
+    list-style: none;
+  }
+  header .nav-container nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    /*-------Links-----*/
+    /*-------Links-----*/
+  }
+  header .nav-container nav ul li a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-family: var(--ff-barlowCondensed);
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.4px;
+    position: relative;
+  }
+  header .nav-container nav ul li a::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    -webkit-margin-after: -36px;
+            margin-block-end: -36px;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+  }
+  header .nav-container nav ul li a:hover::before {
+    width: 100%;
+  }
+  header .nav-container nav ul li a.active::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    -webkit-margin-after: -36px;
+            margin-block-end: -36px;
+  }
+  header .nav-container nav ul li a span {
+    display: inline;
+    font-weight: 700;
+  }
+  header .nav-container nav .line {
+    display: block;
+    width: 473px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    left: -27rem;
+  }
+  /*-------Section-----*/
+  /*-------Section-----*/
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    margin: 4.75rem 10.2rem;
+    gap: 9.8rem;
+    /*----left----*/
+    /*---------right---------*/
+  }
+  section .container-left {
+    gap: 6.1rem;
+  }
+  section .container-left h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 4.7px;
+  }
+  section .container-left .image-container {
+    margin: 0;
+  }
+  section .container-left .image-container img {
+    width: 27.8rem;
+    height: 27.8rem;
+  }
+  section .container-right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    margin: initial;
+    gap: 2.3rem;
+    -webkit-margin-before: 6rem;
+            margin-block-start: 6rem;
+    /*---------list---------*/
+    /*---------article---------*/
+    /*---------line---------*/
+    /*---------Distance & Time---------*/
+  }
+  section .container-right ul {
+    gap: 2.2rem;
+  }
+  section .container-right ul li a {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: start;
+  }
+  section .container-right ul li a::before {
+    -webkit-margin-after: -12px;
+            margin-block-end: -12px;
+  }
+  section .container-right ul li a.active::before {
+    -webkit-margin-after: -12px;
+            margin-block-end: -12px;
+  }
+  section .container-right article h2 {
+    font-size: 100px;
+    line-height: 1.15;
+    text-align: start;
+  }
+  section .container-right article p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: start;
+  }
+  section .container-right .line {
+    width: 100%;
+  }
+  section .container-right .distance-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.7rem;
+  }
+  section .container-right .distance-time .avg-distance {
+    gap: 0.75rem;
+  }
+  section .container-right .distance-time .travel-time {
+    gap: 0.75rem;
+  }
 }
 /*# sourceMappingURL=destination.css.map */
